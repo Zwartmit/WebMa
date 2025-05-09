@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
-import { Button } from "@/components/ui/button";
 import { Heart, Gift, Star, Music } from "lucide-react";
 import useConfetti from "@/hooks/useConfetti";
 import ma from "../../assets/IMG-20250509-WA0074.jpg";
@@ -284,7 +283,7 @@ export default function Home() {
 
         {/* Memories carousel */}
         <motion.section
-          className="rounded-2xl shadow-xl mb-10 mt-10 bg-white"
+          className="rounded-2xl shadow-xl mb-10 mt-8 bg-white"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -300,23 +299,22 @@ export default function Home() {
             <div className="w-full h-80 overflow-hidden rounded-xl shadow-md">
               <img
                 src={memories[current]}
-                alt={`Memory ${current + 1}`}
                 className="w-full h-full object-cover"
               />
             </div>
 
-            <div className="flex justify-center gap-6">
+            <div className="flex justify-center gap-6 mb-3 mt-2">
               <button
                 onClick={prev}
-                className="px-4 py-2 bg-primary-light rounded-full hover:bg-gray-600 transition"
+                className="px-2 py-1 text-xl bg-primary-light rounded-full hover:bg-primary transition animate-bounce"
               >
-                👈🏽
+                ⪻
               </button>
               <button
                 onClick={next}
-                className="px-4 py-2 bg-primary-light rounded-full hover:bg-gray-600 transition"
+                className="px-2 py-1 text-xl bg-primary-light rounded-full hover:bg-primary transition animate-bounce"
               >
-                👉🏽
+                ⪼
               </button>
             </div>
           </div>
