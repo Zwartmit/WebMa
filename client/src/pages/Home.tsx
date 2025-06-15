@@ -3,21 +3,22 @@ import { useState, useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { Heart, Gift, Star, Music } from "lucide-react";
 import useConfetti from "@/hooks/useConfetti";
-import ma from "../../assets/IMG-20250509-WA0074.jpg";
-import Image1 from "../../assets/IMG-20250509-WA0059.jpg";
-import Image2 from "../../assets/IMG-20250509-WA0060.jpg";
-import Image3 from "../../assets/IMG-20250509-WA0061.jpg";
-import Image4 from "../../assets/IMG-20250509-WA0062.jpg";
+import pa from "../../assets/Imagen de WhatsApp 2025-06-15 a las 08.24.44_c770baed.jpg";
+import Image1 from "../../assets/IMG-20250420-WA0267.jpg";
+import Image2 from "../../assets/IMG-20250509-WA0059.jpg";
+import Image3 from "../../assets/IMG-20250509-WA0064.jpg";
+import Image4 from "../../assets/IMG-20250509-WA0071.jpg";
 import Image5 from "../../assets/IMG-20250509-WA0077.jpg";
-import Image6 from "../../assets/IMG-20250509-WA0065.jpg";
-import Image8 from "../../assets/IMG-20250509-WA0068.jpg";
-import Image9 from "../../assets/IMG-20250509-WA0069.jpg";
-import Image10 from "../../assets/IMG-20250509-WA0070.jpg";
-import Image11 from "../../assets/IMG-20250509-WA0071.jpg";
-import Image12 from "../../assets/IMG-20250509-WA0073.jpg";
-import Image13 from "../../assets/IMG-20250509-WA0076.jpg";
-import Image14 from "../../assets/IMG-20250509-WA0064.jpg";
-import Image15 from "../../assets/IMG-20250509-WA0078.jpg";
+import Image6 from "../../assets/IMG-20250615-WA0003.jpg";
+import Image7 from "../../assets/IMG-20250615-WA0004.jpg";
+import Image8 from "../../assets/IMG-20250615-WA0005.jpg";
+import Image9 from "../../assets/IMG-20250615-WA0006.jpg";
+import Image10 from "../../assets/IMG-20250615-WA0007.jpg";
+import Image11 from "../../assets/IMG-20250615-WA0008.jpg";
+import Image12 from "../../assets/IMG-20250615-WA0009.jpg";
+import Image13 from "../../assets/IMG-20250615-WA0010.jpg";
+import Image14 from "../../assets/IMG-20250615-WA0011.jpg";
+import Image15 from "../../assets/Imagen de WhatsApp 2025-06-15 a las 08.21.16_dcc20186.jpg";
 
 export default function Home() {
   const [isPlaying, setIsPlaying] = useState(true);
@@ -44,14 +45,6 @@ export default function Home() {
     return () => clearTimeout(timer);
   }, []);
 
-  // Flower decoration images
-  const flowerImages = [
-    "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150",
-    "https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&auto=format&fit=crop&w=180&h=180",
-    "https://images.unsplash.com/photo-1557592722-a0a649c8c5f0?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150",
-    "https://images.unsplash.com/photo-1457089328109-e5d9bd499191?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150",
-  ];
-
   // Background decoration elements
   const decorations = [
     { top: "0", left: "0", delay: "0s" },
@@ -62,8 +55,9 @@ export default function Home() {
 
   const memories = [
     Image1, Image2, Image3, Image4, Image5,
-    Image6, Image8, Image9, Image10,
-    Image11, Image12, Image13, Image14, Image15,
+    Image6, Image7, Image8, Image9, Image10,
+    Image11, Image12, Image13, Image14,
+    Image15,
   ];
 
   const [current, setCurrent] = useState(0);
@@ -109,7 +103,7 @@ export default function Home() {
           }}
         >
           <img
-            src={flowerImages[index]}
+            src={memories[index]}
             alt="Flor decorativa"
             className="opacity-20"
           />
@@ -130,7 +124,7 @@ export default function Home() {
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            ¡Feliz Día, Mamá!
+            ¡Feliz Día del Padre!
           </motion.h1>
           <motion.div
             className="inline-block px-4 py-2 bg-primary-light rounded-full shadow-sm mt-3"
@@ -139,7 +133,7 @@ export default function Home() {
           >
             <p className="text-dark-text font-medium text-sm md:text-base">
               <Heart className="inline-block text-primary mr-2 h-4 w-4" />
-              Con todo mi amor para ti
+              Con todo mi cariño para ti
               <Heart className="inline-block text-primary ml-2 h-4 w-4" />
             </p>
           </motion.div>
@@ -163,7 +157,7 @@ export default function Home() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.4, duration: 0.8 }}
               >
-                Para la mejor mamá del mundo...
+                Para el mejor papá del mundo...
               </motion.h2>
 
               <motion.p
@@ -173,9 +167,9 @@ export default function Home() {
                 transition={{ delay: 0.6, duration: 0.8 }}
               >
                 <p>
-                  Este día está dedicado a celebrar todo el amor, dedicación y sacrificio que has brindado.
+                  Hoy celebramos tu ejemplo, tu esfuerzo y todo el amor que nos das cada día.
                 </p>
-                <p>¡Te amo muchísimo!</p>
+                <p>¡Te amo, papá!</p>
               </motion.p>
             </div>
 
@@ -189,7 +183,7 @@ export default function Home() {
             >
               <iframe
                 style={{ borderRadius: "12px" }}
-                src="https://open.spotify.com/embed/track/5t5eUp3Ld2Rrpti2iQIQAm?utm_source=generator"
+                src="https://open.spotify.com/embed/track/0TTNTPbFEpFOY2w3gFLjrn?utm_source=generator"
                 width="100%"
                 height="300"
                 allowFullScreen
@@ -219,7 +213,7 @@ export default function Home() {
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
             <div className="bg-primary-light px-6 py-3">
               <h2 className="font-dancing text-3xl md:text-4xl text-dark-text">
-                Mi mensaje especial para ti
+                Un mensaje especial para ti
               </h2>
             </div>
 
@@ -230,7 +224,7 @@ export default function Home() {
               transition={{ delay: 0.8, duration: 1 }}
             >
               <img
-                src={ma}
+                src={pa}
                 style={{ width: "90%", height: "auto", margin: "0 auto" }}
                 className="rounded-2xl shadow-xl object-cover card-hover"
               />
@@ -260,12 +254,9 @@ export default function Home() {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.5, duration: 1 }}
                 >
-                  Mamá, eres el pilar que sostiene mi vida. Tu amor
-                  incondicional me ha enseñado a ser quien soy hoy. Gracias por
-                  cada sacrificio, por cada palabra de aliento, por cada sonrisa
-                  y por estar siempre a mi lado. En este día tan especial, quiero que sepas que eres mi mayor
-                  ejemplo de fuerza, determinación y amor. Gracias por guiarme,
-                  por protegerme y por quererme tanto.
+                  Papá, eres mi héroe y mi mayor inspiración. Gracias por tu apoyo incondicional, por tus enseñanzas y por estar siempre.
+                  En este día tan especial, quiero que sepas cuánto te admiro y te quiero. Gracias por tu ejemplo de fortaleza, dedicación y amor.
+                  Eres un hombre increíble, lleno de bondad y amor. Gracias por ser mi padre.
                 </motion.p>
 
                 <motion.p

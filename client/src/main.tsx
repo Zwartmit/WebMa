@@ -3,23 +3,23 @@ import App from "./App";
 import "./index.css";
 
 // Set page title for SEO
-document.title = "Feliz Día de las Madres - Crea un mensaje especial";
+document.title = "Feliz Día del Padre";
 
 // Add meta description for SEO
 const metaDescription = document.createElement("meta");
 metaDescription.name = "description";
-metaDescription.content = "Crea un hermoso mensaje personalizado para celebrar el Día de las Madres. Tarjetas animadas con música, efectos y mensajes desde el corazón.";
+metaDescription.content = "Crea un hermoso mensaje personalizado para celebrar el Día del Padre. Tarjetas animadas con música, efectos y mensajes desde el corazón.";
 document.head.appendChild(metaDescription);
 
 // Add Open Graph tags for better social sharing
 const ogTitle = document.createElement("meta");
 ogTitle.property = "og:title";
-ogTitle.content = "Feliz Día de las Madres - Crea un mensaje especial";
+ogTitle.content = "Feliz Día del Padre - Crea un mensaje especial";
 document.head.appendChild(ogTitle);
 
 const ogDescription = document.createElement("meta");
 ogDescription.property = "og:description";
-ogDescription.content = "Crea un hermoso mensaje personalizado para celebrar el Día de las Madres. Tarjetas animadas con música, efectos y mensajes desde el corazón.";
+ogDescription.content = "Crea un hermoso mensaje personalizado para celebrar el Día del Padre. Tarjetas animadas con música, efectos y mensajes desde el corazón.";
 document.head.appendChild(ogDescription);
 
 const ogType = document.createElement("meta");

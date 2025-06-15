@@ -24,14 +24,14 @@
   --ring: 20 14.3% 4.1%;
   --radius: 0.5rem;
   
-  /* Custom colors for Mother's Day */
-  --primary: 336 83% 86%;
-  --primary-light: 336 83% 96%;
-  --secondary: 255 100% 86%;
-  --secondary-light: 255 100% 96%;
-  --accent: 44 100% 70%;
-  --cream: 48 100% 95%;
-  --dark-text: 263 35% 26%;
+  /* Custom colors for Father's Day */
+  --primary: 217 71% 53%;          /* Azul fuerte */
+  --primary-light: 217 71% 93%;    /* Azul claro */
+  --secondary: 210 11% 71%;        /* Gris azulado */
+  --secondary-light: 210 16% 92%;  /* Gris claro */
+  --accent: 44 100% 60%;           /* Dorado */
+  --cream: 47 33% 96%;             /* Crema más neutro */
+  --dark-text: 220 26% 20%;        /* Azul grisáceo oscuro */
 }
 
 .dark {
@@ -125,43 +125,43 @@
 }
 
 .bg-primary {
-  background-color: #F8C1D8;
+  background-color: hsl(217, 71%, 53%);
 }
 
 .bg-primary-light {
-  background-color: #FCE2EC;
+  background-color: hsl(217, 71%, 93%);
 }
 
 .bg-secondary {
-  background-color: #D0BFFF;
+  background-color: hsl(210, 11%, 71%);
 }
 
 .bg-secondary-light {
-  background-color: #E5DDFF;
+  background-color: hsl(210, 16%, 92%);
 }
 
 .bg-accent {
-  background-color: #FFD966;
+  background-color: hsl(44, 100%, 60%);
 }
 
 .bg-cream {
-  background-color: #FFF8E6;
+  background-color: hsl(47, 33%, 96%);
 }
 
 .text-primary {
-  color: #F8C1D8;
+  color: hsl(217, 71%, 53%);
 }
 
 .text-secondary {
-  color: #D0BFFF;
+  color: hsl(210, 11%, 71%);
 }
 
 .text-accent {
-  color: #FFD966;
+  color: hsl(44, 100%, 60%);
 }
 
 .text-dark-text {
-  color: #3D2C59;
+  color: hsl(220, 26%, 20%);
 }
 
 /* Volume slider styling */
